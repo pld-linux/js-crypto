@@ -8,7 +8,6 @@ Source0:	https://crypto-js.googlecode.com/files/Crypto-JS%20v%{version}.zip
 # Source0-md5:	c2d35c3611fbb156103590b50eba9d70
 URL:		https://code.google.com/p/crypto-js/
 BuildRequires:	rpmbuild(macros) >= 1.553
-BuildRequires:	rpmbuild(macros) >= 1.268
 BuildRequires:	unzip
 Requires:	webserver(access)
 Requires:	webserver(alias)
@@ -51,9 +50,9 @@ install -d $RPM_BUILD_ROOT%{_appdir}
 cp -a . $RPM_BUILD_ROOT%{_appdir}
 
 install -d $RPM_BUILD_ROOT%{_sysconfdir}
-cp -a apache.conf $RPM_BUILD_ROOT%{_sysconfdir}/apache.conf
-cp -a apache.conf $RPM_BUILD_ROOT%{_sysconfdir}/httpd.conf
-cp -a lighttpd.conf $RPM_BUILD_ROOT%{_sysconfdir}/lighttpd.conf
+cp -p apache.conf $RPM_BUILD_ROOT%{_sysconfdir}/apache.conf
+cp -p apache.conf $RPM_BUILD_ROOT%{_sysconfdir}/httpd.conf
+cp -p lighttpd.conf $RPM_BUILD_ROOT%{_sysconfdir}/lighttpd.conf
 
 %clean
 rm -rf $RPM_BUILD_ROOT
