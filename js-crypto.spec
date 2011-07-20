@@ -4,7 +4,7 @@ Version:	2.3.0
 Release:	1
 License:	New BSD License
 Group:		Applications/WWW
-Source0:	https://crypto-js.googlecode.com/files/Crypto-JS%20v%{version}.zip
+Source0:	https://crypto-js.googlecode.com/files/Crypto-JS%20v%{version}.zip#/Crypto-JS_v%{version}.zip
 # Source0-md5:	c2d35c3611fbb156103590b50eba9d70
 URL:		https://code.google.com/p/crypto-js/
 BuildRequires:	rpmbuild(macros) >= 1.553
